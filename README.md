@@ -14,9 +14,9 @@ This is a real-time chat application that allows users to communicate seamlessly
 ## Technologies Used
 - Frontend: React.js / Next.js
 - Backend: Node.js / Express
-- Database: MongoDB / Firebase
+- Database: MongoDB / Cloudinary
 - WebSockets: Socket.io
-- Authentication: JWT / Firebase Auth
+- Authentication: JWT
 
 ## Installation
 
@@ -34,38 +34,72 @@ Ensure you have the following installed on your system:
    ```sh
    cd chat_app
    ```
+
+   ```sh
+   cd backend
+   ```
+
 3. Install dependencies:
    ```sh
    npm install
-   # or
-   yarn install
    ```
-4. Configure environment variables:
+
+   The same should be repeated from Project folder
+
+   ```sh
+   cd frontend
+   ```
+
+   ```sh
+   npm install
+   ```
+   
+5. Configure environment variables:
    - Create a `.env` file in the root directory
    - Add the required API keys and database credentials
+   
+   ```sh
+   MONGODB_URI=...
+   PORT=5001
+   JWT_SECRET=...
 
-5. Start the development server:
+   CLOUDINARY_CLOUD_NAME=...
+   CLOUDINARY_API_KEY=...
+   CLOUDINARY_API_SECRET=...
+
+   NODE_ENV=development
+   ```
+   
+6. Start the development server:
+   Backend:
+   ```sh
+   cd backend
+   ```
+
    ```sh
    npm run dev
-   # or
-   yarn dev
+   ```
+
+   Frontend:
+   ```sh
+   cd frontend
+   ```
+
+   ```sh
+   npm run dev
    ```
 
 ## Usage
-- Open the browser and go to `http://localhost:3000`
+- Open the browser and go to `http://localhost:5173`
 - Register a new account or log in
 - Start a chat with other users
 
 ## Deployment
 To deploy the application, you can use:
 - Vercel for frontend
-- Heroku / AWS / DigitalOcean for backend
+- Render for backend
 
-Example:
-```sh
-npm run build
-npm start
-```
+
 
 ## Contributing
 Contributions are welcome! Follow these steps:
@@ -74,8 +108,3 @@ Contributions are welcome! Follow these steps:
 3. Commit your changes
 4. Push to the branch and create a Pull Request
 
-## License
-This project is licensed under the MIT License.
-
-## Contact
-For any issues or suggestions, open an issue in the repository or reach out to the maintainer.
