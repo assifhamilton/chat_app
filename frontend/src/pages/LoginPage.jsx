@@ -49,7 +49,7 @@ const LoginPage = () => {
                 <input
                   type="email"
                   className={`input input-bordered w-full pl-10`}
-                  placeholder="you@example.com"
+                  placeholder="gafuras_aehit@students.vizja.pl"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 />
@@ -110,9 +110,11 @@ const LoginPage = () => {
 
       {/* Right Side - Image/Pattern */}
       <AuthImagePattern
-        title={"Welcome back!"}
-        subtitle={"Sign in to continue your conversations and catch up with your messages."}
-      />
+  title={"Welcome back!"}
+  subtitle={"Created by Assif Gafur, student number 39656, University of Human Science and Economy in Warsaw. Project for Project C1 class."}
+
+/>
+
     </div>
   );
 };
